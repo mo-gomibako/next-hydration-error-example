@@ -1,26 +1,32 @@
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[332],{
+(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[403],{
 
-/***/ 4671:
+/***/ 7732:
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4904))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7985))
 
 /***/ }),
 
-/***/ 4904:
+/***/ 7985:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ReloadButton: function() { return /* binding */ ReloadButton; }
+/* harmony export */   HydrationFailed: function() { return /* binding */ HydrationFailed; }
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9268);
-/* __next_internal_client_entry_do_not_use__ ReloadButton auto */ 
-const ReloadButton = ()=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
-        onClick: ()=>location.reload(),
-        children: "reload"
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6006);
+/* __next_internal_client_entry_do_not_use__ HydrationFailed auto */ 
+
+const HydrationFailed = ()=>{
+    const [windowWidth] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(()=> true ? window.innerWidth.toString() : 0);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        children: JSON.stringify({
+            windowWidth
+        })
     });
+};
 
 
 /***/ }),
@@ -61,7 +67,7 @@ if (true) {
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, [253,698,744], function() { return __webpack_exec__(4671); });
+/******/ __webpack_require__.O(0, [253,698,744], function() { return __webpack_exec__(7732); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ _N_E = __webpack_exports__;
 /******/ }

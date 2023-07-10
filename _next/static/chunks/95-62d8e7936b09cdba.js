@@ -1,1 +1,1440 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[95],{4390:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"addLocale",{enumerable:!0,get:function(){return r}}),n(5588);let r=function(e){for(var t=arguments.length,n=Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return e};("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},2273:function(e,t){function n(e,t,n,r){return!1}Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"getDomainLocale",{enumerable:!0,get:function(){return n}}),("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},2582:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"hasBasePath",{enumerable:!0,get:function(){return o}});let r=n(1174);function o(e){return(0,r.pathHasPrefix)(e,"/next-hydration-error-example")}("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},7095:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return v}});let r=n(6927),o=r._(n(6006)),u=n(7182),a=n(8158),l=n(7242),i=n(6775),f=n(4390),c=n(2330),s=n(5456),d=n(4735),p=n(2273),h=n(2409),y=n(4741),g=new Set;function m(e,t,n,r,o,u){if(!u&&!(0,a.isLocalURL)(t))return;if(!r.bypassPrefetchedCheck){let o=void 0!==r.locale?r.locale:"locale"in e?e.locale:void 0,u=t+"%"+n+"%"+o;if(g.has(u))return;g.add(u)}let l=u?e.prefetch(t,o):e.prefetch(t,n,r);Promise.resolve(l).catch(e=>{})}function b(e){return"string"==typeof e?e:(0,l.formatUrl)(e)}let P=o.default.forwardRef(function(e,t){let n,r;let{href:l,as:g,children:P,prefetch:v=null,passHref:_,replace:O,shallow:j,scroll:R,locale:E,onClick:x,onMouseEnter:M,onTouchStart:C,legacyBehavior:k=!1,...w}=e;n=P,k&&("string"==typeof n||"number"==typeof n)&&(n=o.default.createElement("a",null,n));let I=o.default.useContext(c.RouterContext),S=o.default.useContext(s.AppRouterContext),T=null!=I?I:S,L=!I,U=!1!==v,N=null===v?y.PrefetchKind.AUTO:y.PrefetchKind.FULL,{href:A,as:W}=o.default.useMemo(()=>{if(!I){let e=b(l);return{href:e,as:g?b(g):e}}let[e,t]=(0,u.resolveHref)(I,l,!0);return{href:e,as:g?(0,u.resolveHref)(I,g):t||e}},[I,l,g]),D=o.default.useRef(A),z=o.default.useRef(W);k&&(r=o.default.Children.only(n));let K=k?r&&"object"==typeof r&&r.ref:t,[F,$,q]=(0,d.useIntersection)({rootMargin:"200px"}),B=o.default.useCallback(e=>{(z.current!==W||D.current!==A)&&(q(),z.current=W,D.current=A),F(e),K&&("function"==typeof K?K(e):"object"==typeof K&&(K.current=e))},[W,K,A,q,F]);o.default.useEffect(()=>{T&&$&&U&&m(T,A,W,{locale:E},{kind:N},L)},[W,A,$,E,U,null==I?void 0:I.locale,T,L,N]);let H={ref:B,onClick(e){k||"function"!=typeof x||x(e),k&&r.props&&"function"==typeof r.props.onClick&&r.props.onClick(e),T&&!e.defaultPrevented&&function(e,t,n,r,u,l,i,f,c,s){let{nodeName:d}=e.currentTarget,p="A"===d.toUpperCase();if(p&&(function(e){let t=e.currentTarget,n=t.getAttribute("target");return n&&"_self"!==n||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.nativeEvent&&2===e.nativeEvent.which}(e)||!c&&!(0,a.isLocalURL)(n)))return;e.preventDefault();let h=()=>{let e=null==i||i;"beforePopState"in t?t[u?"replace":"push"](n,r,{shallow:l,locale:f,scroll:e}):t[u?"replace":"push"](r||n,{forceOptimisticNavigation:!s,scroll:e})};c?o.default.startTransition(h):h()}(e,T,A,W,O,j,R,E,L,U)},onMouseEnter(e){k||"function"!=typeof M||M(e),k&&r.props&&"function"==typeof r.props.onMouseEnter&&r.props.onMouseEnter(e),T&&(U||!L)&&m(T,A,W,{locale:E,priority:!0,bypassPrefetchedCheck:!0},{kind:N},L)},onTouchStart(e){k||"function"!=typeof C||C(e),k&&r.props&&"function"==typeof r.props.onTouchStart&&r.props.onTouchStart(e),T&&(U||!L)&&m(T,A,W,{locale:E,priority:!0,bypassPrefetchedCheck:!0},{kind:N},L)}};if((0,i.isAbsoluteUrl)(W))H.href=W;else if(!k||_||"a"===r.type&&!("href"in r.props)){let e=void 0!==E?E:null==I?void 0:I.locale,t=(null==I?void 0:I.isLocaleDomain)&&(0,p.getDomainLocale)(W,e,null==I?void 0:I.locales,null==I?void 0:I.domainLocales);H.href=t||(0,h.addBasePath)((0,f.addLocale)(W,e,null==I?void 0:I.defaultLocale))}return k?o.default.cloneElement(r,H):o.default.createElement("a",{...w,...H},n)}),v=P;("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},9830:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{requestIdleCallback:function(){return n},cancelIdleCallback:function(){return r}});let n="undefined"!=typeof self&&self.requestIdleCallback&&self.requestIdleCallback.bind(window)||function(e){let t=Date.now();return self.setTimeout(function(){e({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-t))}})},1)},r="undefined"!=typeof self&&self.cancelIdleCallback&&self.cancelIdleCallback.bind(window)||function(e){return clearTimeout(e)};("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},4735:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"useIntersection",{enumerable:!0,get:function(){return i}});let r=n(6006),o=n(9830),u="function"==typeof IntersectionObserver,a=new Map,l=[];function i(e){let{rootRef:t,rootMargin:n,disabled:i}=e,f=i||!u,[c,s]=(0,r.useState)(!1),d=(0,r.useRef)(null),p=(0,r.useCallback)(e=>{d.current=e},[]);(0,r.useEffect)(()=>{if(u){if(f||c)return;let e=d.current;if(e&&e.tagName){let r=function(e,t,n){let{id:r,observer:o,elements:u}=function(e){let t;let n={root:e.root||null,margin:e.rootMargin||""},r=l.find(e=>e.root===n.root&&e.margin===n.margin);if(r&&(t=a.get(r)))return t;let o=new Map,u=new IntersectionObserver(e=>{e.forEach(e=>{let t=o.get(e.target),n=e.isIntersecting||e.intersectionRatio>0;t&&n&&t(n)})},e);return t={id:n,observer:u,elements:o},l.push(n),a.set(n,t),t}(n);return u.set(e,t),o.observe(e),function(){if(u.delete(e),o.unobserve(e),0===u.size){o.disconnect(),a.delete(r);let e=l.findIndex(e=>e.root===r.root&&e.margin===r.margin);e>-1&&l.splice(e,1)}}}(e,e=>e&&s(e),{root:null==t?void 0:t.current,rootMargin:n});return r}}else if(!c){let e=(0,o.requestIdleCallback)(()=>s(!0));return()=>(0,o.cancelIdleCallback)(e)}},[f,n,t,c,d.current]);let h=(0,r.useCallback)(()=>{s(!1)},[]);return[p,c,h]}("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},8885:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"escapeStringRegexp",{enumerable:!0,get:function(){return o}});let n=/[|\\{}()[\]^$+*?.-]/,r=/[|\\{}()[\]^$+*?.-]/g;function o(e){return n.test(e)?e.replace(r,"\\$&"):e}},2330:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"RouterContext",{enumerable:!0,get:function(){return u}});let r=n(6927),o=r._(n(6006)),u=o.default.createContext(null)},7242:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{formatUrl:function(){return a},urlObjectKeys:function(){return l},formatWithValidation:function(){return i}});let r=n(5909),o=r._(n(7761)),u=/https?|ftp|gopher|file/;function a(e){let{auth:t,hostname:n}=e,r=e.protocol||"",a=e.pathname||"",l=e.hash||"",i=e.query||"",f=!1;t=t?encodeURIComponent(t).replace(/%3A/i,":")+"@":"",e.host?f=t+e.host:n&&(f=t+(~n.indexOf(":")?"["+n+"]":n),e.port&&(f+=":"+e.port)),i&&"object"==typeof i&&(i=String(o.urlQueryToSearchParams(i)));let c=e.search||i&&"?"+i||"";return r&&!r.endsWith(":")&&(r+=":"),e.slashes||(!r||u.test(r))&&!1!==f?(f="//"+(f||""),a&&"/"!==a[0]&&(a="/"+a)):f||(f=""),l&&"#"!==l[0]&&(l="#"+l),c&&"?"!==c[0]&&(c="?"+c),""+r+f+(a=a.replace(/[?#]/g,encodeURIComponent))+(c=c.replace("#","%23"))+l}let l=["auth","hash","host","hostname","href","path","pathname","port","protocol","query","search","slashes"];function i(e){return a(e)}},5841:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"interpolateAs",{enumerable:!0,get:function(){return u}});let r=n(6284),o=n(965);function u(e,t,n){let u="",a=(0,o.getRouteRegex)(e),l=a.groups,i=(t!==e?(0,r.getRouteMatcher)(a)(t):"")||n;u=e;let f=Object.keys(l);return f.every(e=>{let t=i[e]||"",{repeat:n,optional:r}=l[e],o="["+(n?"...":"")+e+"]";return r&&(o=(t?"":"/")+"["+o+"]"),n&&!Array.isArray(t)&&(t=[t]),(r||e in i)&&(u=u.replace(o,n?t.map(e=>encodeURIComponent(e)).join("/"):encodeURIComponent(t))||"/")})||(u=""),{params:f,result:u}}},3597:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"isDynamicRoute",{enumerable:!0,get:function(){return r}});let n=/\/\[[^/]+?\](?=\/|$)/;function r(e){return n.test(e)}},8158:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"isLocalURL",{enumerable:!0,get:function(){return u}});let r=n(6775),o=n(2582);function u(e){if(!(0,r.isAbsoluteUrl)(e))return!0;try{let t=(0,r.getLocationOrigin)(),n=new URL(e,t);return n.origin===t&&(0,o.hasBasePath)(n.pathname)}catch(e){return!1}}},6396:function(e,t){function n(e,t){let n={};return Object.keys(e).forEach(r=>{t.includes(r)||(n[r]=e[r])}),n}Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"omit",{enumerable:!0,get:function(){return n}})},1174:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"pathHasPrefix",{enumerable:!0,get:function(){return o}});let r=n(4035);function o(e,t){if("string"!=typeof e)return!1;let{pathname:n}=(0,r.parsePath)(e);return n===t||n.startsWith(t+"/")}},7761:function(e,t){function n(e){let t={};return e.forEach((e,n)=>{void 0===t[n]?t[n]=e:Array.isArray(t[n])?t[n].push(e):t[n]=[t[n],e]}),t}function r(e){return"string"!=typeof e&&("number"!=typeof e||isNaN(e))&&"boolean"!=typeof e?"":String(e)}function o(e){let t=new URLSearchParams;return Object.entries(e).forEach(e=>{let[n,o]=e;Array.isArray(o)?o.forEach(e=>t.append(n,r(e))):t.set(n,r(o))}),t}function u(e){for(var t=arguments.length,n=Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return n.forEach(t=>{Array.from(t.keys()).forEach(t=>e.delete(t)),t.forEach((t,n)=>e.append(n,t))}),e}Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{searchParamsToUrlQuery:function(){return n},urlQueryToSearchParams:function(){return o},assign:function(){return u}})},7182:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"resolveHref",{enumerable:!0,get:function(){return s}});let r=n(7761),o=n(7242),u=n(6396),a=n(6775),l=n(5588),i=n(8158),f=n(3597),c=n(5841);function s(e,t,n){let s;let d="string"==typeof t?t:(0,o.formatWithValidation)(t),p=d.match(/^[a-zA-Z]{1,}:\/\//),h=p?d.slice(p[0].length):d;if((h.split("?")[0]||"").match(/(\/\/|\\)/)){console.error("Invalid href '"+d+"' passed to next/router in page: '"+e.pathname+"'. Repeated forward-slashes (//) or backslashes \\ are not valid in the href.");let t=(0,a.normalizeRepeatedSlashes)(h);d=(p?p[0]:"")+t}if(!(0,i.isLocalURL)(d))return n?[d]:d;try{s=new URL(d.startsWith("#")?e.asPath:e.pathname,"http://n")}catch(e){s=new URL("/","http://n")}try{let e=new URL(d,s);e.pathname=(0,l.normalizePathTrailingSlash)(e.pathname);let t="";if((0,f.isDynamicRoute)(e.pathname)&&e.searchParams&&n){let n=(0,r.searchParamsToUrlQuery)(e.searchParams),{result:a,params:l}=(0,c.interpolateAs)(e.pathname,e.pathname,n);a&&(t=(0,o.formatWithValidation)({pathname:a,hash:e.hash,query:(0,u.omit)(n,l)}))}let a=e.origin===s.origin?e.href.slice(e.origin.length):e.href;return n?[a,t||a]:a}catch(e){return n?[d]:d}}},6284:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"getRouteMatcher",{enumerable:!0,get:function(){return o}});let r=n(6775);function o(e){let{re:t,groups:n}=e;return e=>{let o=t.exec(e);if(!o)return!1;let u=e=>{try{return decodeURIComponent(e)}catch(e){throw new r.DecodeError("failed to decode param")}},a={};return Object.keys(n).forEach(e=>{let t=n[e],r=o[t.pos];void 0!==r&&(a[e]=~r.indexOf("/")?r.split("/").map(e=>u(e)):t.repeat?[u(r)]:u(r))}),a}}},965:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{getRouteRegex:function(){return i},getNamedRouteRegex:function(){return s},getNamedMiddlewareRegex:function(){return d}});let r=n(7399),o=n(8885),u=n(1402);function a(e){let t=e.startsWith("[")&&e.endsWith("]");t&&(e=e.slice(1,-1));let n=e.startsWith("...");return n&&(e=e.slice(3)),{key:e,repeat:n,optional:t}}function l(e){let t=(0,u.removeTrailingSlash)(e).slice(1).split("/"),n={},l=1;return{parameterizedRoute:t.map(e=>{let t=r.INTERCEPTION_ROUTE_MARKERS.find(t=>e.startsWith(t)),u=e.match(/\[((?:\[.*\])|.+)\]/);if(t&&u){let{key:e,optional:r,repeat:i}=a(u[1]);return n[e]={pos:l++,repeat:i,optional:r},"/"+(0,o.escapeStringRegexp)(t)+"([^/]+?)"}if(!u)return"/"+(0,o.escapeStringRegexp)(e);{let{key:e,repeat:t,optional:r}=a(u[1]);return n[e]={pos:l++,repeat:t,optional:r},t?r?"(?:/(.+?))?":"/(.+?)":"/([^/]+?)"}}).join(""),groups:n}}function i(e){let{parameterizedRoute:t,groups:n}=l(e);return{re:RegExp("^"+t+"(?:/)?$"),groups:n}}function f(e){let t,n,{segment:r,routeKeys:o,keyPrefix:u}=e,l=(t=97,n=1,()=>{let e="";for(let r=0;r<n;r++)e+=String.fromCharCode(t),++t>122&&(n++,t=97);return e}),{key:i,optional:f,repeat:c}=a(r),s=i.replace(/\W/g,"");u&&(s=""+u+s);let d=!1;return(0===s.length||s.length>30)&&(d=!0),isNaN(parseInt(s.slice(0,1)))||(d=!0),d&&(s=l()),u?o[s]=""+u+i:o[s]=""+i,c?f?"(?:/(?<"+s+">.+?))?":"/(?<"+s+">.+?)":"/(?<"+s+">[^/]+?)"}function c(e,t){let n=(0,u.removeTrailingSlash)(e).slice(1).split("/"),a={};return{namedParameterizedRoute:n.map(e=>{let n=r.INTERCEPTION_ROUTE_MARKERS.some(t=>e.startsWith(t)),u=e.match(/\[((?:\[.*\])|.+)\]/);return n&&u?f({segment:u[1],routeKeys:a,keyPrefix:t?"nxtI":void 0}):u?f({segment:u[1],routeKeys:a,keyPrefix:t?"nxtP":void 0}):"/"+(0,o.escapeStringRegexp)(e)}).join(""),routeKeys:a}}function s(e,t){let n=c(e,t);return{...i(e),namedRegex:"^"+n.namedParameterizedRoute+"(?:/)?$",routeKeys:n.routeKeys}}function d(e,t){let{parameterizedRoute:n}=l(e),{catchAll:r=!0}=t;if("/"===n)return{namedRegex:"^/"+(r?".*":"")+"$"};let{namedParameterizedRoute:o}=c(e,!1);return{namedRegex:"^"+o+(r?"(?:(/.*)?)":"")+"$"}}},6775:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{WEB_VITALS:function(){return n},execOnce:function(){return r},isAbsoluteUrl:function(){return u},getLocationOrigin:function(){return a},getURL:function(){return l},getDisplayName:function(){return i},isResSent:function(){return f},normalizeRepeatedSlashes:function(){return c},loadGetInitialProps:function(){return s},SP:function(){return d},ST:function(){return p},DecodeError:function(){return h},NormalizeError:function(){return y},PageNotFoundError:function(){return g},MissingStaticPage:function(){return m},MiddlewareNotFoundError:function(){return b},stringifyError:function(){return P}});let n=["CLS","FCP","FID","INP","LCP","TTFB"];function r(e){let t,n=!1;return function(){for(var r=arguments.length,o=Array(r),u=0;u<r;u++)o[u]=arguments[u];return n||(n=!0,t=e(...o)),t}}let o=/^[a-zA-Z][a-zA-Z\d+\-.]*?:/,u=e=>o.test(e);function a(){let{protocol:e,hostname:t,port:n}=window.location;return e+"//"+t+(n?":"+n:"")}function l(){let{href:e}=window.location,t=a();return e.substring(t.length)}function i(e){return"string"==typeof e?e:e.displayName||e.name||"Unknown"}function f(e){return e.finished||e.headersSent}function c(e){let t=e.split("?"),n=t[0];return n.replace(/\\/g,"/").replace(/\/\/+/g,"/")+(t[1]?"?"+t.slice(1).join("?"):"")}async function s(e,t){let n=t.res||t.ctx&&t.ctx.res;if(!e.getInitialProps)return t.ctx&&t.Component?{pageProps:await s(t.Component,t.ctx)}:{};let r=await e.getInitialProps(t);if(n&&f(n))return r;if(!r){let t='"'+i(e)+'.getInitialProps()" should resolve to an object. But found "'+r+'" instead.';throw Error(t)}return r}let d="undefined"!=typeof performance,p=d&&["mark","measure","getEntriesByName"].every(e=>"function"==typeof performance[e]);class h extends Error{}class y extends Error{}class g extends Error{constructor(e){super(),this.code="ENOENT",this.name="PageNotFoundError",this.message="Cannot find module for page: "+e}}class m extends Error{constructor(e,t){super(),this.message="Failed to load static file for page: "+e+" "+t}}class b extends Error{constructor(){super(),this.code="ENOENT",this.message="Cannot find the middleware module"}}function P(e){return JSON.stringify({message:e.message,stack:e.stack})}}}]);
+"use strict";
+(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[95],{
+
+/***/ 4390:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "addLocale", ({
+    enumerable: true,
+    get: function() {
+        return addLocale;
+    }
+}));
+const _normalizetrailingslash = __webpack_require__(5588);
+const addLocale = function(path) {
+    for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
+        args[_key - 1] = arguments[_key];
+    }
+    if (false) {}
+    return path;
+};
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=add-locale.js.map
+
+
+/***/ }),
+
+/***/ 2273:
+/***/ (function(module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "getDomainLocale", ({
+    enumerable: true,
+    get: function() {
+        return getDomainLocale;
+    }
+}));
+const basePath = (/* unused pure expression or super */ null && ("/next-hydration-error-example" || 0));
+function getDomainLocale(path, locale, locales, domainLocales) {
+    if (false) {} else {
+        return false;
+    }
+}
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=get-domain-locale.js.map
+
+
+/***/ }),
+
+/***/ 2582:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "hasBasePath", ({
+    enumerable: true,
+    get: function() {
+        return hasBasePath;
+    }
+}));
+const _pathhasprefix = __webpack_require__(1174);
+const basePath = "/next-hydration-error-example" || 0;
+function hasBasePath(path) {
+    return (0, _pathhasprefix.pathHasPrefix)(path, basePath);
+}
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=has-base-path.js.map
+
+
+/***/ }),
+
+/***/ 7095:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* __next_internal_client_entry_do_not_use__  cjs */ 
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+const _interop_require_default = __webpack_require__(6927);
+const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(6006));
+const _resolvehref = __webpack_require__(7182);
+const _islocalurl = __webpack_require__(8158);
+const _formaturl = __webpack_require__(7242);
+const _utils = __webpack_require__(6775);
+const _addlocale = __webpack_require__(4390);
+const _routercontext = __webpack_require__(2330);
+const _approutercontext = __webpack_require__(5456);
+const _useintersection = __webpack_require__(4735);
+const _getdomainlocale = __webpack_require__(2273);
+const _addbasepath = __webpack_require__(2409);
+const _routerreducertypes = __webpack_require__(4741);
+const prefetched = new Set();
+function prefetch(router, href, as, options, appOptions, isAppRouter) {
+    if (false) {}
+    // app-router supports external urls out of the box so it shouldn't short-circuit here as support for e.g. `replace` is added in the app-router.
+    if (!isAppRouter && !(0, _islocalurl.isLocalURL)(href)) {
+        return;
+    }
+    // We should only dedupe requests when experimental.optimisticClientCache is
+    // disabled.
+    if (!options.bypassPrefetchedCheck) {
+        const locale = typeof options.locale !== "undefined" ? options.locale : "locale" in router ? router.locale : undefined;
+        const prefetchedKey = href + "%" + as + "%" + locale;
+        // If we've already fetched the key, then don't prefetch it again!
+        if (prefetched.has(prefetchedKey)) {
+            return;
+        }
+        // Mark this URL as prefetched.
+        prefetched.add(prefetchedKey);
+    }
+    const prefetchPromise = isAppRouter ? router.prefetch(href, appOptions) : router.prefetch(href, as, options);
+    // Prefetch the JSON page if asked (only in the client)
+    // We need to handle a prefetch error here since we may be
+    // loading with priority which can reject but we don't
+    // want to force navigation since this is only a prefetch
+    Promise.resolve(prefetchPromise).catch((err)=>{
+        if (false) {}
+    });
+}
+function isModifiedEvent(event) {
+    const eventTarget = event.currentTarget;
+    const target = eventTarget.getAttribute("target");
+    return target && target !== "_self" || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || // triggers resource download
+    event.nativeEvent && event.nativeEvent.which === 2;
+}
+function linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAppRouter, prefetchEnabled) {
+    const { nodeName } = e.currentTarget;
+    // anchors inside an svg have a lowercase nodeName
+    const isAnchorNodeName = nodeName.toUpperCase() === "A";
+    if (isAnchorNodeName && (isModifiedEvent(e) || // app-router supports external urls out of the box so it shouldn't short-circuit here as support for e.g. `replace` is added in the app-router.
+    !isAppRouter && !(0, _islocalurl.isLocalURL)(href))) {
+        // ignore click for browser’s default behavior
+        return;
+    }
+    e.preventDefault();
+    const navigate = ()=>{
+        // If the router is an NextRouter instance it will have `beforePopState`
+        const routerScroll = scroll != null ? scroll : true;
+        if ("beforePopState" in router) {
+            router[replace ? "replace" : "push"](href, as, {
+                shallow,
+                locale,
+                scroll: routerScroll
+            });
+        } else {
+            router[replace ? "replace" : "push"](as || href, {
+                forceOptimisticNavigation: !prefetchEnabled,
+                scroll: routerScroll
+            });
+        }
+    };
+    if (isAppRouter) {
+        _react.default.startTransition(navigate);
+    } else {
+        navigate();
+    }
+}
+function formatStringOrUrl(urlObjOrString) {
+    if (typeof urlObjOrString === "string") {
+        return urlObjOrString;
+    }
+    return (0, _formaturl.formatUrl)(urlObjOrString);
+}
+/**
+ * React Component that enables client-side transitions between routes.
+ */ const Link = /*#__PURE__*/ _react.default.forwardRef(function LinkComponent(props, forwardedRef) {
+    let children;
+    const { href: hrefProp, as: asProp, children: childrenProp, prefetch: prefetchProp = null, passHref, replace, shallow, scroll, locale, onClick, onMouseEnter: onMouseEnterProp, onTouchStart: onTouchStartProp, legacyBehavior = true === false, ...restProps } = props;
+    children = childrenProp;
+    if (legacyBehavior && (typeof children === "string" || typeof children === "number")) {
+        children = /*#__PURE__*/ _react.default.createElement("a", null, children);
+    }
+    const pagesRouter = _react.default.useContext(_routercontext.RouterContext);
+    const appRouter = _react.default.useContext(_approutercontext.AppRouterContext);
+    const router = pagesRouter != null ? pagesRouter : appRouter;
+    // We're in the app directory if there is no pages router.
+    const isAppRouter = !pagesRouter;
+    const prefetchEnabled = prefetchProp !== false;
+    /**
+     * The possible states for prefetch are:
+     * - null: this is the default "auto" mode, where we will prefetch partially if the link is in the viewport
+     * - true: we will prefetch if the link is visible and prefetch the full page, not just partially
+     * - false: we will not prefetch if in the viewport at all
+     */ const appPrefetchKind = prefetchProp === null ? _routerreducertypes.PrefetchKind.AUTO : _routerreducertypes.PrefetchKind.FULL;
+    if (false) {}
+    if (false) {}
+    const { href, as } = _react.default.useMemo(()=>{
+        if (!pagesRouter) {
+            const resolvedHref = formatStringOrUrl(hrefProp);
+            return {
+                href: resolvedHref,
+                as: asProp ? formatStringOrUrl(asProp) : resolvedHref
+            };
+        }
+        const [resolvedHref, resolvedAs] = (0, _resolvehref.resolveHref)(pagesRouter, hrefProp, true);
+        return {
+            href: resolvedHref,
+            as: asProp ? (0, _resolvehref.resolveHref)(pagesRouter, asProp) : resolvedAs || resolvedHref
+        };
+    }, [
+        pagesRouter,
+        hrefProp,
+        asProp
+    ]);
+    const previousHref = _react.default.useRef(href);
+    const previousAs = _react.default.useRef(as);
+    // This will return the first child, if multiple are provided it will throw an error
+    let child;
+    if (legacyBehavior) {
+        if (false) {} else {
+            child = _react.default.Children.only(children);
+        }
+    } else {
+        if (false) {}
+    }
+    const childRef = legacyBehavior ? child && typeof child === "object" && child.ref : forwardedRef;
+    const [setIntersectionRef, isVisible, resetVisible] = (0, _useintersection.useIntersection)({
+        rootMargin: "200px"
+    });
+    const setRef = _react.default.useCallback((el)=>{
+        // Before the link getting observed, check if visible state need to be reset
+        if (previousAs.current !== as || previousHref.current !== href) {
+            resetVisible();
+            previousAs.current = as;
+            previousHref.current = href;
+        }
+        setIntersectionRef(el);
+        if (childRef) {
+            if (typeof childRef === "function") childRef(el);
+            else if (typeof childRef === "object") {
+                childRef.current = el;
+            }
+        }
+    }, [
+        as,
+        childRef,
+        href,
+        resetVisible,
+        setIntersectionRef
+    ]);
+    // Prefetch the URL if we haven't already and it's visible.
+    _react.default.useEffect(()=>{
+        // in dev, we only prefetch on hover to avoid wasting resources as the prefetch will trigger compiling the page.
+        if (false) {}
+        if (!router) {
+            return;
+        }
+        // If we don't need to prefetch the URL, don't do prefetch.
+        if (!isVisible || !prefetchEnabled) {
+            return;
+        }
+        // Prefetch the URL.
+        prefetch(router, href, as, {
+            locale
+        }, {
+            kind: appPrefetchKind
+        }, isAppRouter);
+    }, [
+        as,
+        href,
+        isVisible,
+        locale,
+        prefetchEnabled,
+        pagesRouter == null ? void 0 : pagesRouter.locale,
+        router,
+        isAppRouter,
+        appPrefetchKind
+    ]);
+    const childProps = {
+        ref: setRef,
+        onClick (e) {
+            if (false) {}
+            if (!legacyBehavior && typeof onClick === "function") {
+                onClick(e);
+            }
+            if (legacyBehavior && child.props && typeof child.props.onClick === "function") {
+                child.props.onClick(e);
+            }
+            if (!router) {
+                return;
+            }
+            if (e.defaultPrevented) {
+                return;
+            }
+            linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAppRouter, prefetchEnabled);
+        },
+        onMouseEnter (e) {
+            if (!legacyBehavior && typeof onMouseEnterProp === "function") {
+                onMouseEnterProp(e);
+            }
+            if (legacyBehavior && child.props && typeof child.props.onMouseEnter === "function") {
+                child.props.onMouseEnter(e);
+            }
+            if (!router) {
+                return;
+            }
+            if ((!prefetchEnabled || "production" === "development") && isAppRouter) {
+                return;
+            }
+            prefetch(router, href, as, {
+                locale,
+                priority: true,
+                // @see {https://github.com/vercel/next.js/discussions/40268?sort=top#discussioncomment-3572642}
+                bypassPrefetchedCheck: true
+            }, {
+                kind: appPrefetchKind
+            }, isAppRouter);
+        },
+        onTouchStart (e) {
+            if (!legacyBehavior && typeof onTouchStartProp === "function") {
+                onTouchStartProp(e);
+            }
+            if (legacyBehavior && child.props && typeof child.props.onTouchStart === "function") {
+                child.props.onTouchStart(e);
+            }
+            if (!router) {
+                return;
+            }
+            if (!prefetchEnabled && isAppRouter) {
+                return;
+            }
+            prefetch(router, href, as, {
+                locale,
+                priority: true,
+                // @see {https://github.com/vercel/next.js/discussions/40268?sort=top#discussioncomment-3572642}
+                bypassPrefetchedCheck: true
+            }, {
+                kind: appPrefetchKind
+            }, isAppRouter);
+        }
+    };
+    // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
+    // defined, we specify the current 'href', so that repetition is not needed by the user.
+    // If the url is absolute, we can bypass the logic to prepend the domain and locale.
+    if ((0, _utils.isAbsoluteUrl)(as)) {
+        childProps.href = as;
+    } else if (!legacyBehavior || passHref || child.type === "a" && !("href" in child.props)) {
+        const curLocale = typeof locale !== "undefined" ? locale : pagesRouter == null ? void 0 : pagesRouter.locale;
+        // we only render domain locales if we are currently on a domain locale
+        // so that locale links are still visitable in development/preview envs
+        const localeDomain = (pagesRouter == null ? void 0 : pagesRouter.isLocaleDomain) && (0, _getdomainlocale.getDomainLocale)(as, curLocale, pagesRouter == null ? void 0 : pagesRouter.locales, pagesRouter == null ? void 0 : pagesRouter.domainLocales);
+        childProps.href = localeDomain || (0, _addbasepath.addBasePath)((0, _addlocale.addLocale)(as, curLocale, pagesRouter == null ? void 0 : pagesRouter.defaultLocale));
+    }
+    return legacyBehavior ? /*#__PURE__*/ _react.default.cloneElement(child, childProps) : /*#__PURE__*/ _react.default.createElement("a", {
+        ...restProps,
+        ...childProps
+    }, children);
+});
+const _default = Link;
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=link.js.map
+
+
+/***/ }),
+
+/***/ 9830:
+/***/ (function(module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    requestIdleCallback: function() {
+        return requestIdleCallback;
+    },
+    cancelIdleCallback: function() {
+        return cancelIdleCallback;
+    }
+});
+const requestIdleCallback = typeof self !== "undefined" && self.requestIdleCallback && self.requestIdleCallback.bind(window) || function(cb) {
+    let start = Date.now();
+    return self.setTimeout(function() {
+        cb({
+            didTimeout: false,
+            timeRemaining: function() {
+                return Math.max(0, 50 - (Date.now() - start));
+            }
+        });
+    }, 1);
+};
+const cancelIdleCallback = typeof self !== "undefined" && self.cancelIdleCallback && self.cancelIdleCallback.bind(window) || function(id) {
+    return clearTimeout(id);
+};
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=request-idle-callback.js.map
+
+
+/***/ }),
+
+/***/ 4735:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "useIntersection", ({
+    enumerable: true,
+    get: function() {
+        return useIntersection;
+    }
+}));
+const _react = __webpack_require__(6006);
+const _requestidlecallback = __webpack_require__(9830);
+const hasIntersectionObserver = typeof IntersectionObserver === "function";
+const observers = new Map();
+const idList = [];
+function createObserver(options) {
+    const id = {
+        root: options.root || null,
+        margin: options.rootMargin || ""
+    };
+    const existing = idList.find((obj)=>obj.root === id.root && obj.margin === id.margin);
+    let instance;
+    if (existing) {
+        instance = observers.get(existing);
+        if (instance) {
+            return instance;
+        }
+    }
+    const elements = new Map();
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+            const callback = elements.get(entry.target);
+            const isVisible = entry.isIntersecting || entry.intersectionRatio > 0;
+            if (callback && isVisible) {
+                callback(isVisible);
+            }
+        });
+    }, options);
+    instance = {
+        id,
+        observer,
+        elements
+    };
+    idList.push(id);
+    observers.set(id, instance);
+    return instance;
+}
+function observe(element, callback, options) {
+    const { id, observer, elements } = createObserver(options);
+    elements.set(element, callback);
+    observer.observe(element);
+    return function unobserve() {
+        elements.delete(element);
+        observer.unobserve(element);
+        // Destroy observer when there's nothing left to watch:
+        if (elements.size === 0) {
+            observer.disconnect();
+            observers.delete(id);
+            const index = idList.findIndex((obj)=>obj.root === id.root && obj.margin === id.margin);
+            if (index > -1) {
+                idList.splice(index, 1);
+            }
+        }
+    };
+}
+function useIntersection(param) {
+    let { rootRef, rootMargin, disabled } = param;
+    const isDisabled = disabled || !hasIntersectionObserver;
+    const [visible, setVisible] = (0, _react.useState)(false);
+    const elementRef = (0, _react.useRef)(null);
+    const setElement = (0, _react.useCallback)((element)=>{
+        elementRef.current = element;
+    }, []);
+    (0, _react.useEffect)(()=>{
+        if (hasIntersectionObserver) {
+            if (isDisabled || visible) return;
+            const element = elementRef.current;
+            if (element && element.tagName) {
+                const unobserve = observe(element, (isVisible)=>isVisible && setVisible(isVisible), {
+                    root: rootRef == null ? void 0 : rootRef.current,
+                    rootMargin
+                });
+                return unobserve;
+            }
+        } else {
+            if (!visible) {
+                const idleCallback = (0, _requestidlecallback.requestIdleCallback)(()=>setVisible(true));
+                return ()=>(0, _requestidlecallback.cancelIdleCallback)(idleCallback);
+            }
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [
+        isDisabled,
+        rootMargin,
+        rootRef,
+        visible,
+        elementRef.current
+    ]);
+    const resetVisible = (0, _react.useCallback)(()=>{
+        setVisible(false);
+    }, []);
+    return [
+        setElement,
+        visible,
+        resetVisible
+    ];
+}
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=use-intersection.js.map
+
+
+/***/ }),
+
+/***/ 8885:
+/***/ (function(__unused_webpack_module, exports) {
+
+// regexp is based on https://github.com/sindresorhus/escape-string-regexp
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "escapeStringRegexp", ({
+    enumerable: true,
+    get: function() {
+        return escapeStringRegexp;
+    }
+}));
+const reHasRegExp = /[|\\{}()[\]^$+*?.-]/;
+const reReplaceRegExp = /[|\\{}()[\]^$+*?.-]/g;
+function escapeStringRegexp(str) {
+    // see also: https://github.com/lodash/lodash/blob/2da024c3b4f9947a48517639de7560457cd4ec6c/escapeRegExp.js#L23
+    if (reHasRegExp.test(str)) {
+        return str.replace(reReplaceRegExp, "\\$&");
+    }
+    return str;
+} //# sourceMappingURL=escape-regexp.js.map
+
+
+/***/ }),
+
+/***/ 2330:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "RouterContext", ({
+    enumerable: true,
+    get: function() {
+        return RouterContext;
+    }
+}));
+const _interop_require_default = __webpack_require__(6927);
+const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(6006));
+const RouterContext = _react.default.createContext(null);
+if (false) {} //# sourceMappingURL=router-context.js.map
+
+
+/***/ }),
+
+/***/ 7242:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+// Format function modified from nodejs
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    formatUrl: function() {
+        return formatUrl;
+    },
+    urlObjectKeys: function() {
+        return urlObjectKeys;
+    },
+    formatWithValidation: function() {
+        return formatWithValidation;
+    }
+});
+const _interop_require_wildcard = __webpack_require__(5909);
+const _querystring = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(7761));
+const slashedProtocols = /https?|ftp|gopher|file/;
+function formatUrl(urlObj) {
+    let { auth, hostname } = urlObj;
+    let protocol = urlObj.protocol || "";
+    let pathname = urlObj.pathname || "";
+    let hash = urlObj.hash || "";
+    let query = urlObj.query || "";
+    let host = false;
+    auth = auth ? encodeURIComponent(auth).replace(/%3A/i, ":") + "@" : "";
+    if (urlObj.host) {
+        host = auth + urlObj.host;
+    } else if (hostname) {
+        host = auth + (~hostname.indexOf(":") ? "[" + hostname + "]" : hostname);
+        if (urlObj.port) {
+            host += ":" + urlObj.port;
+        }
+    }
+    if (query && typeof query === "object") {
+        query = String(_querystring.urlQueryToSearchParams(query));
+    }
+    let search = urlObj.search || query && "?" + query || "";
+    if (protocol && !protocol.endsWith(":")) protocol += ":";
+    if (urlObj.slashes || (!protocol || slashedProtocols.test(protocol)) && host !== false) {
+        host = "//" + (host || "");
+        if (pathname && pathname[0] !== "/") pathname = "/" + pathname;
+    } else if (!host) {
+        host = "";
+    }
+    if (hash && hash[0] !== "#") hash = "#" + hash;
+    if (search && search[0] !== "?") search = "?" + search;
+    pathname = pathname.replace(/[?#]/g, encodeURIComponent);
+    search = search.replace("#", "%23");
+    return "" + protocol + host + pathname + search + hash;
+}
+const urlObjectKeys = [
+    "auth",
+    "hash",
+    "host",
+    "hostname",
+    "href",
+    "path",
+    "pathname",
+    "port",
+    "protocol",
+    "query",
+    "search",
+    "slashes"
+];
+function formatWithValidation(url) {
+    if (false) {}
+    return formatUrl(url);
+} //# sourceMappingURL=format-url.js.map
+
+
+/***/ }),
+
+/***/ 5841:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "interpolateAs", ({
+    enumerable: true,
+    get: function() {
+        return interpolateAs;
+    }
+}));
+const _routematcher = __webpack_require__(6284);
+const _routeregex = __webpack_require__(965);
+function interpolateAs(route, asPathname, query) {
+    let interpolatedRoute = "";
+    const dynamicRegex = (0, _routeregex.getRouteRegex)(route);
+    const dynamicGroups = dynamicRegex.groups;
+    const dynamicMatches = (asPathname !== route ? (0, _routematcher.getRouteMatcher)(dynamicRegex)(asPathname) : "") || // Fall back to reading the values from the href
+    // TODO: should this take priority; also need to change in the router.
+    query;
+    interpolatedRoute = route;
+    const params = Object.keys(dynamicGroups);
+    if (!params.every((param)=>{
+        let value = dynamicMatches[param] || "";
+        const { repeat, optional } = dynamicGroups[param];
+        // support single-level catch-all
+        // TODO: more robust handling for user-error (passing `/`)
+        let replaced = "[" + (repeat ? "..." : "") + param + "]";
+        if (optional) {
+            replaced = (!value ? "/" : "") + "[" + replaced + "]";
+        }
+        if (repeat && !Array.isArray(value)) value = [
+            value
+        ];
+        return (optional || param in dynamicMatches) && // Interpolate group into data URL if present
+        (interpolatedRoute = interpolatedRoute.replace(replaced, repeat ? value.map(// path delimiter escaped since they are being inserted
+        // into the URL and we expect URL encoded segments
+        // when parsing dynamic route params
+        (segment)=>encodeURIComponent(segment)).join("/") : encodeURIComponent(value)) || "/");
+    })) {
+        interpolatedRoute = "" // did not satisfy all requirements
+        ;
+    // n.b. We ignore this error because we handle warning for this case in
+    // development in the `<Link>` component directly.
+    }
+    return {
+        params,
+        result: interpolatedRoute
+    };
+} //# sourceMappingURL=interpolate-as.js.map
+
+
+/***/ }),
+
+/***/ 3597:
+/***/ (function(__unused_webpack_module, exports) {
+
+// Identify /[param]/ in route string
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "isDynamicRoute", ({
+    enumerable: true,
+    get: function() {
+        return isDynamicRoute;
+    }
+}));
+const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
+function isDynamicRoute(route) {
+    return TEST_ROUTE.test(route);
+} //# sourceMappingURL=is-dynamic.js.map
+
+
+/***/ }),
+
+/***/ 8158:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "isLocalURL", ({
+    enumerable: true,
+    get: function() {
+        return isLocalURL;
+    }
+}));
+const _utils = __webpack_require__(6775);
+const _hasbasepath = __webpack_require__(2582);
+function isLocalURL(url) {
+    // prevent a hydration mismatch on href for url with anchor refs
+    if (!(0, _utils.isAbsoluteUrl)(url)) return true;
+    try {
+        // absolute urls can be local if they are on the same origin
+        const locationOrigin = (0, _utils.getLocationOrigin)();
+        const resolved = new URL(url, locationOrigin);
+        return resolved.origin === locationOrigin && (0, _hasbasepath.hasBasePath)(resolved.pathname);
+    } catch (_) {
+        return false;
+    }
+} //# sourceMappingURL=is-local-url.js.map
+
+
+/***/ }),
+
+/***/ 6396:
+/***/ (function(__unused_webpack_module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "omit", ({
+    enumerable: true,
+    get: function() {
+        return omit;
+    }
+}));
+function omit(object, keys) {
+    const omitted = {};
+    Object.keys(object).forEach((key)=>{
+        if (!keys.includes(key)) {
+            omitted[key] = object[key];
+        }
+    });
+    return omitted;
+} //# sourceMappingURL=omit.js.map
+
+
+/***/ }),
+
+/***/ 1174:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "pathHasPrefix", ({
+    enumerable: true,
+    get: function() {
+        return pathHasPrefix;
+    }
+}));
+const _parsepath = __webpack_require__(4035);
+function pathHasPrefix(path, prefix) {
+    if (typeof path !== "string") {
+        return false;
+    }
+    const { pathname } = (0, _parsepath.parsePath)(path);
+    return pathname === prefix || pathname.startsWith(prefix + "/");
+} //# sourceMappingURL=path-has-prefix.js.map
+
+
+/***/ }),
+
+/***/ 7761:
+/***/ (function(__unused_webpack_module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    searchParamsToUrlQuery: function() {
+        return searchParamsToUrlQuery;
+    },
+    urlQueryToSearchParams: function() {
+        return urlQueryToSearchParams;
+    },
+    assign: function() {
+        return assign;
+    }
+});
+function searchParamsToUrlQuery(searchParams) {
+    const query = {};
+    searchParams.forEach((value, key)=>{
+        if (typeof query[key] === "undefined") {
+            query[key] = value;
+        } else if (Array.isArray(query[key])) {
+            query[key].push(value);
+        } else {
+            query[key] = [
+                query[key],
+                value
+            ];
+        }
+    });
+    return query;
+}
+function stringifyUrlQueryParam(param) {
+    if (typeof param === "string" || typeof param === "number" && !isNaN(param) || typeof param === "boolean") {
+        return String(param);
+    } else {
+        return "";
+    }
+}
+function urlQueryToSearchParams(urlQuery) {
+    const result = new URLSearchParams();
+    Object.entries(urlQuery).forEach((param)=>{
+        let [key, value] = param;
+        if (Array.isArray(value)) {
+            value.forEach((item)=>result.append(key, stringifyUrlQueryParam(item)));
+        } else {
+            result.set(key, stringifyUrlQueryParam(value));
+        }
+    });
+    return result;
+}
+function assign(target) {
+    for(var _len = arguments.length, searchParamsList = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
+        searchParamsList[_key - 1] = arguments[_key];
+    }
+    searchParamsList.forEach((searchParams)=>{
+        Array.from(searchParams.keys()).forEach((key)=>target.delete(key));
+        searchParams.forEach((value, key)=>target.append(key, value));
+    });
+    return target;
+} //# sourceMappingURL=querystring.js.map
+
+
+/***/ }),
+
+/***/ 7182:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "resolveHref", ({
+    enumerable: true,
+    get: function() {
+        return resolveHref;
+    }
+}));
+const _querystring = __webpack_require__(7761);
+const _formaturl = __webpack_require__(7242);
+const _omit = __webpack_require__(6396);
+const _utils = __webpack_require__(6775);
+const _normalizetrailingslash = __webpack_require__(5588);
+const _islocalurl = __webpack_require__(8158);
+const _isdynamic = __webpack_require__(3597);
+const _interpolateas = __webpack_require__(5841);
+function resolveHref(router, href, resolveAs) {
+    // we use a dummy base url for relative urls
+    let base;
+    let urlAsString = typeof href === "string" ? href : (0, _formaturl.formatWithValidation)(href);
+    // repeated slashes and backslashes in the URL are considered
+    // invalid and will never match a Next.js page/file
+    const urlProtoMatch = urlAsString.match(/^[a-zA-Z]{1,}:\/\//);
+    const urlAsStringNoProto = urlProtoMatch ? urlAsString.slice(urlProtoMatch[0].length) : urlAsString;
+    const urlParts = urlAsStringNoProto.split("?");
+    if ((urlParts[0] || "").match(/(\/\/|\\)/)) {
+        console.error("Invalid href '" + urlAsString + "' passed to next/router in page: '" + router.pathname + "'. Repeated forward-slashes (//) or backslashes \\ are not valid in the href.");
+        const normalizedUrl = (0, _utils.normalizeRepeatedSlashes)(urlAsStringNoProto);
+        urlAsString = (urlProtoMatch ? urlProtoMatch[0] : "") + normalizedUrl;
+    }
+    // Return because it cannot be routed by the Next.js router
+    if (!(0, _islocalurl.isLocalURL)(urlAsString)) {
+        return resolveAs ? [
+            urlAsString
+        ] : urlAsString;
+    }
+    try {
+        base = new URL(urlAsString.startsWith("#") ? router.asPath : router.pathname, "http://n");
+    } catch (_) {
+        // fallback to / for invalid asPath values e.g. //
+        base = new URL("/", "http://n");
+    }
+    try {
+        const finalUrl = new URL(urlAsString, base);
+        finalUrl.pathname = (0, _normalizetrailingslash.normalizePathTrailingSlash)(finalUrl.pathname);
+        let interpolatedAs = "";
+        if ((0, _isdynamic.isDynamicRoute)(finalUrl.pathname) && finalUrl.searchParams && resolveAs) {
+            const query = (0, _querystring.searchParamsToUrlQuery)(finalUrl.searchParams);
+            const { result, params } = (0, _interpolateas.interpolateAs)(finalUrl.pathname, finalUrl.pathname, query);
+            if (result) {
+                interpolatedAs = (0, _formaturl.formatWithValidation)({
+                    pathname: result,
+                    hash: finalUrl.hash,
+                    query: (0, _omit.omit)(query, params)
+                });
+            }
+        }
+        // if the origin didn't change, it means we received a relative href
+        const resolvedHref = finalUrl.origin === base.origin ? finalUrl.href.slice(finalUrl.origin.length) : finalUrl.href;
+        return resolveAs ? [
+            resolvedHref,
+            interpolatedAs || resolvedHref
+        ] : resolvedHref;
+    } catch (_) {
+        return resolveAs ? [
+            urlAsString
+        ] : urlAsString;
+    }
+} //# sourceMappingURL=resolve-href.js.map
+
+
+/***/ }),
+
+/***/ 6284:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "getRouteMatcher", ({
+    enumerable: true,
+    get: function() {
+        return getRouteMatcher;
+    }
+}));
+const _utils = __webpack_require__(6775);
+function getRouteMatcher(param) {
+    let { re, groups } = param;
+    return (pathname)=>{
+        const routeMatch = re.exec(pathname);
+        if (!routeMatch) {
+            return false;
+        }
+        const decode = (param)=>{
+            try {
+                return decodeURIComponent(param);
+            } catch (_) {
+                throw new _utils.DecodeError("failed to decode param");
+            }
+        };
+        const params = {};
+        Object.keys(groups).forEach((slugName)=>{
+            const g = groups[slugName];
+            const m = routeMatch[g.pos];
+            if (m !== undefined) {
+                params[slugName] = ~m.indexOf("/") ? m.split("/").map((entry)=>decode(entry)) : g.repeat ? [
+                    decode(m)
+                ] : decode(m);
+            }
+        });
+        return params;
+    };
+} //# sourceMappingURL=route-matcher.js.map
+
+
+/***/ }),
+
+/***/ 965:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    getRouteRegex: function() {
+        return getRouteRegex;
+    },
+    getNamedRouteRegex: function() {
+        return getNamedRouteRegex;
+    },
+    getNamedMiddlewareRegex: function() {
+        return getNamedMiddlewareRegex;
+    }
+});
+const _interceptionroutes = __webpack_require__(7399);
+const _escaperegexp = __webpack_require__(8885);
+const _removetrailingslash = __webpack_require__(1402);
+const NEXT_QUERY_PARAM_PREFIX = "nxtP";
+const NEXT_INTERCEPTION_MARKER_PREFIX = "nxtI";
+/**
+ * Parses a given parameter from a route to a data structure that can be used
+ * to generate the parametrized route. Examples:
+ *   - `[...slug]` -> `{ key: 'slug', repeat: true, optional: true }`
+ *   - `...slug` -> `{ key: 'slug', repeat: true, optional: false }`
+ *   - `[foo]` -> `{ key: 'foo', repeat: false, optional: true }`
+ *   - `bar` -> `{ key: 'bar', repeat: false, optional: false }`
+ */ function parseParameter(param) {
+    const optional = param.startsWith("[") && param.endsWith("]");
+    if (optional) {
+        param = param.slice(1, -1);
+    }
+    const repeat = param.startsWith("...");
+    if (repeat) {
+        param = param.slice(3);
+    }
+    return {
+        key: param,
+        repeat,
+        optional
+    };
+}
+function getParametrizedRoute(route) {
+    const segments = (0, _removetrailingslash.removeTrailingSlash)(route).slice(1).split("/");
+    const groups = {};
+    let groupIndex = 1;
+    return {
+        parameterizedRoute: segments.map((segment)=>{
+            const markerMatch = _interceptionroutes.INTERCEPTION_ROUTE_MARKERS.find((m)=>segment.startsWith(m));
+            const paramMatches = segment.match(/\[((?:\[.*\])|.+)\]/) // Check for parameters
+            ;
+            if (markerMatch && paramMatches) {
+                const { key, optional, repeat } = parseParameter(paramMatches[1]);
+                groups[key] = {
+                    pos: groupIndex++,
+                    repeat,
+                    optional
+                };
+                return "/" + (0, _escaperegexp.escapeStringRegexp)(markerMatch) + "([^/]+?)";
+            } else if (paramMatches) {
+                const { key, repeat, optional } = parseParameter(paramMatches[1]);
+                groups[key] = {
+                    pos: groupIndex++,
+                    repeat,
+                    optional
+                };
+                return repeat ? optional ? "(?:/(.+?))?" : "/(.+?)" : "/([^/]+?)";
+            } else {
+                return "/" + (0, _escaperegexp.escapeStringRegexp)(segment);
+            }
+        }).join(""),
+        groups
+    };
+}
+function getRouteRegex(normalizedRoute) {
+    const { parameterizedRoute, groups } = getParametrizedRoute(normalizedRoute);
+    return {
+        re: new RegExp("^" + parameterizedRoute + "(?:/)?$"),
+        groups: groups
+    };
+}
+/**
+ * Builds a function to generate a minimal routeKey using only a-z and minimal
+ * number of characters.
+ */ function buildGetSafeRouteKey() {
+    let routeKeyCharCode = 97;
+    let routeKeyCharLength = 1;
+    return ()=>{
+        let routeKey = "";
+        for(let i = 0; i < routeKeyCharLength; i++){
+            routeKey += String.fromCharCode(routeKeyCharCode);
+            routeKeyCharCode++;
+            if (routeKeyCharCode > 122) {
+                routeKeyCharLength++;
+                routeKeyCharCode = 97;
+            }
+        }
+        return routeKey;
+    };
+}
+function getSafeKeyFromSegment(param) {
+    let { segment, routeKeys, keyPrefix } = param;
+    const getSafeRouteKey = buildGetSafeRouteKey();
+    const { key, optional, repeat } = parseParameter(segment);
+    // replace any non-word characters since they can break
+    // the named regex
+    let cleanedKey = key.replace(/\W/g, "");
+    if (keyPrefix) {
+        cleanedKey = "" + keyPrefix + cleanedKey;
+    }
+    let invalidKey = false;
+    // check if the key is still invalid and fallback to using a known
+    // safe key
+    if (cleanedKey.length === 0 || cleanedKey.length > 30) {
+        invalidKey = true;
+    }
+    if (!isNaN(parseInt(cleanedKey.slice(0, 1)))) {
+        invalidKey = true;
+    }
+    if (invalidKey) {
+        cleanedKey = getSafeRouteKey();
+    }
+    if (keyPrefix) {
+        routeKeys[cleanedKey] = "" + keyPrefix + key;
+    } else {
+        routeKeys[cleanedKey] = "" + key;
+    }
+    return repeat ? optional ? "(?:/(?<" + cleanedKey + ">.+?))?" : "/(?<" + cleanedKey + ">.+?)" : "/(?<" + cleanedKey + ">[^/]+?)";
+}
+function getNamedParametrizedRoute(route, prefixRouteKeys) {
+    const segments = (0, _removetrailingslash.removeTrailingSlash)(route).slice(1).split("/");
+    const routeKeys = {};
+    return {
+        namedParameterizedRoute: segments.map((segment)=>{
+            const hasInterceptionMarker = _interceptionroutes.INTERCEPTION_ROUTE_MARKERS.some((m)=>segment.startsWith(m));
+            const paramMatches = segment.match(/\[((?:\[.*\])|.+)\]/) // Check for parameters
+            ;
+            if (hasInterceptionMarker && paramMatches) {
+                return getSafeKeyFromSegment({
+                    segment: paramMatches[1],
+                    routeKeys,
+                    keyPrefix: prefixRouteKeys ? NEXT_INTERCEPTION_MARKER_PREFIX : undefined
+                });
+            } else if (paramMatches) {
+                return getSafeKeyFromSegment({
+                    segment: paramMatches[1],
+                    routeKeys,
+                    keyPrefix: prefixRouteKeys ? NEXT_QUERY_PARAM_PREFIX : undefined
+                });
+            } else {
+                return "/" + (0, _escaperegexp.escapeStringRegexp)(segment);
+            }
+        }).join(""),
+        routeKeys
+    };
+}
+function getNamedRouteRegex(normalizedRoute, prefixRouteKey) {
+    const result = getNamedParametrizedRoute(normalizedRoute, prefixRouteKey);
+    return {
+        ...getRouteRegex(normalizedRoute),
+        namedRegex: "^" + result.namedParameterizedRoute + "(?:/)?$",
+        routeKeys: result.routeKeys
+    };
+}
+function getNamedMiddlewareRegex(normalizedRoute, options) {
+    const { parameterizedRoute } = getParametrizedRoute(normalizedRoute);
+    const { catchAll = true } = options;
+    if (parameterizedRoute === "/") {
+        let catchAllRegex = catchAll ? ".*" : "";
+        return {
+            namedRegex: "^/" + catchAllRegex + "$"
+        };
+    }
+    const { namedParameterizedRoute } = getNamedParametrizedRoute(normalizedRoute, false);
+    let catchAllGroupedRegex = catchAll ? "(?:(/.*)?)" : "";
+    return {
+        namedRegex: "^" + namedParameterizedRoute + catchAllGroupedRegex + "$"
+    };
+} //# sourceMappingURL=route-regex.js.map
+
+
+/***/ }),
+
+/***/ 6775:
+/***/ (function(__unused_webpack_module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    WEB_VITALS: function() {
+        return WEB_VITALS;
+    },
+    execOnce: function() {
+        return execOnce;
+    },
+    isAbsoluteUrl: function() {
+        return isAbsoluteUrl;
+    },
+    getLocationOrigin: function() {
+        return getLocationOrigin;
+    },
+    getURL: function() {
+        return getURL;
+    },
+    getDisplayName: function() {
+        return getDisplayName;
+    },
+    isResSent: function() {
+        return isResSent;
+    },
+    normalizeRepeatedSlashes: function() {
+        return normalizeRepeatedSlashes;
+    },
+    loadGetInitialProps: function() {
+        return loadGetInitialProps;
+    },
+    SP: function() {
+        return SP;
+    },
+    ST: function() {
+        return ST;
+    },
+    DecodeError: function() {
+        return DecodeError;
+    },
+    NormalizeError: function() {
+        return NormalizeError;
+    },
+    PageNotFoundError: function() {
+        return PageNotFoundError;
+    },
+    MissingStaticPage: function() {
+        return MissingStaticPage;
+    },
+    MiddlewareNotFoundError: function() {
+        return MiddlewareNotFoundError;
+    },
+    stringifyError: function() {
+        return stringifyError;
+    }
+});
+const WEB_VITALS = [
+    "CLS",
+    "FCP",
+    "FID",
+    "INP",
+    "LCP",
+    "TTFB"
+];
+function execOnce(fn) {
+    let used = false;
+    let result;
+    return function() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++){
+            args[_key] = arguments[_key];
+        }
+        if (!used) {
+            used = true;
+            result = fn(...args);
+        }
+        return result;
+    };
+}
+// Scheme: https://tools.ietf.org/html/rfc3986#section-3.1
+// Absolute URL: https://tools.ietf.org/html/rfc3986#section-4.3
+const ABSOLUTE_URL_REGEX = /^[a-zA-Z][a-zA-Z\d+\-.]*?:/;
+const isAbsoluteUrl = (url)=>ABSOLUTE_URL_REGEX.test(url);
+function getLocationOrigin() {
+    const { protocol, hostname, port } = window.location;
+    return protocol + "//" + hostname + (port ? ":" + port : "");
+}
+function getURL() {
+    const { href } = window.location;
+    const origin = getLocationOrigin();
+    return href.substring(origin.length);
+}
+function getDisplayName(Component) {
+    return typeof Component === "string" ? Component : Component.displayName || Component.name || "Unknown";
+}
+function isResSent(res) {
+    return res.finished || res.headersSent;
+}
+function normalizeRepeatedSlashes(url) {
+    const urlParts = url.split("?");
+    const urlNoQuery = urlParts[0];
+    return urlNoQuery // first we replace any non-encoded backslashes with forward
+    // then normalize repeated forward slashes
+    .replace(/\\/g, "/").replace(/\/\/+/g, "/") + (urlParts[1] ? "?" + urlParts.slice(1).join("?") : "");
+}
+async function loadGetInitialProps(App, ctx) {
+    if (false) { var _App_prototype; }
+    // when called from _app `ctx` is nested in `ctx`
+    const res = ctx.res || ctx.ctx && ctx.ctx.res;
+    if (!App.getInitialProps) {
+        if (ctx.ctx && ctx.Component) {
+            // @ts-ignore pageProps default
+            return {
+                pageProps: await loadGetInitialProps(ctx.Component, ctx.ctx)
+            };
+        }
+        return {};
+    }
+    const props = await App.getInitialProps(ctx);
+    if (res && isResSent(res)) {
+        return props;
+    }
+    if (!props) {
+        const message = '"' + getDisplayName(App) + '.getInitialProps()" should resolve to an object. But found "' + props + '" instead.';
+        throw new Error(message);
+    }
+    if (false) {}
+    return props;
+}
+const SP = typeof performance !== "undefined";
+const ST = SP && [
+    "mark",
+    "measure",
+    "getEntriesByName"
+].every((method)=>typeof performance[method] === "function");
+class DecodeError extends Error {
+}
+class NormalizeError extends Error {
+}
+class PageNotFoundError extends Error {
+    constructor(page){
+        super();
+        this.code = "ENOENT";
+        this.name = "PageNotFoundError";
+        this.message = "Cannot find module for page: " + page;
+    }
+}
+class MissingStaticPage extends Error {
+    constructor(page, message){
+        super();
+        this.message = "Failed to load static file for page: " + page + " " + message;
+    }
+}
+class MiddlewareNotFoundError extends Error {
+    constructor(){
+        super();
+        this.code = "ENOENT";
+        this.message = "Cannot find the middleware module";
+    }
+}
+function stringifyError(error) {
+    return JSON.stringify({
+        message: error.message,
+        stack: error.stack
+    });
+} //# sourceMappingURL=utils.js.map
+
+
+/***/ })
+
+}]);
