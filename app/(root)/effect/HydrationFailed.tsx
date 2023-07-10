@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export const HydrationFailed = () => {
   const [windowWidth] = useState(() =>
-    typeof window !== 'undefined' ? window.innerWidth : 0
+    typeof window !== 'undefined' ? window.innerWidth.toString() : false
   )
   return (
     <div>

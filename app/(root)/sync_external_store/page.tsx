@@ -1,4 +1,4 @@
-import { HydrationSuccess } from './HydrationSuccess'
+import { HydrationSuccess } from './HydrationFailed'
 
 export default function Page() {
   return (

@@ -7,10 +7,9 @@ export const HydrationSuccess = () => {
     () => {
       return () => {}
     },
-    () => window.innerWidth,
-    () => 0
+    () => window.innerWidth.toString(),
+    () => `${typeof window !== 'undefined'}`
   )
-  console.debug('render', { windowWidth })
   return (
     <div>
       {JSON.stringify({
