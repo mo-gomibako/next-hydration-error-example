@@ -1,4 +1,4 @@
 module.exports = {
   output: 'export',
-  basePath: '/gh-pages',
+  basePath: '/next-hydration-error-example',
 }
